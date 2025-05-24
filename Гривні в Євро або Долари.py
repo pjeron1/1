@@ -1,6 +1,6 @@
 import sqlite3
 import requests
-
+#Створіть Converter.db
 class USDCurrencyConverter:
     def __init__(self, rate_usd):
         self.rate_usd = rate_usd
@@ -63,7 +63,9 @@ if __name__ == "__main__":
     else:
         print("Невірний вибір.")
 
-connection = sqlite3.connect("final_project.db")
+
+#Створіть Converter.db
+connection = sqlite3.connect("Converter.db")
 cursor = connection.cursor()
 
 
